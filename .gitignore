@@ -1,7 +1,5 @@
-# Ignore folders
+# Node modules
 node_modules/
 
-
-# Ignore specific files
+# Environment variables (if any)
 .env
-
