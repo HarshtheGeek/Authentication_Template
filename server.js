@@ -5,6 +5,7 @@ const connectToDB = require('./database/db');
 const authroute = require("./routes/auth-routes");
 const homeroute = require("./routes/home-route");
 const adminroute = require("./routes/admin-routes");
+const uploadImageRoute = require("./routes/image-routes");
 
 
 const app = express();
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use("/api/auth",authroute);
 app.use("/api/home",homeroute);
 app.use("/api/admin",adminroute);
+app.use("/api/image",uploadImageRoute);
 
 // Define port
 const PORT = process.env.PORT || 4000;
